@@ -2,7 +2,7 @@ import './Loadenv.js'
 import app from "./App.js";
 import connectdb from './src/config/db.js'
 
-const Port=process.env.PORT
+const Port=process.env.PORT || 5000
 
 connectdb()
 .then(()=>{
