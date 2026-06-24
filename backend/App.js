@@ -15,8 +15,8 @@ app.use(express.json())
 
 
 
-app.use('/users',userRoutes)
-app.use('/pantry',pantaryRoutes)
-app.use('/recipes',recipeRoutes)
+app.use('/api/users',userRoutes)
+app.use('/api/pantry',pantaryRoutes)
+app.use('/api/recipes',recipeRoutes)
 
 export default app
