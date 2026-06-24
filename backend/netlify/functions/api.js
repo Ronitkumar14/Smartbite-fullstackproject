@@ -4,7 +4,7 @@ import app from '../../App.js'
 import connectdb from '../../src/config/db.js'
 
 const connectToDatabase = async () => {
-  if (mongoose.connection.readyState >= 1) return // already connected, reuse
+  if (mongoose.connection.readyState>=1) return
   await connectdb()
 }
 
